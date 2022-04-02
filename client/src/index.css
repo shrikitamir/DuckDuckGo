@@ -1,0 +1,15 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content-container {
+    padding: 45px;
+}

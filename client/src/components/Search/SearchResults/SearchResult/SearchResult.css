@@ -1,0 +1,14 @@
+.search-result {
+padding: 8px 0;
+}
+
+.search-result a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 100;
+    transition: 0.3s ease-in-out;
+}
+
+.search-result a:hover {
+    color: rgb(79, 191, 225);
+}

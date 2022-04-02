@@ -1,0 +1,39 @@
+.search {
+  width: 500px;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+}
+
+.search-term {
+  width: 100%;
+  border: 3px solid #44ff79;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.search-term:focus {
+  color: #2e302e;
+}
+
+.search-button {
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.get-button {
+  border: 1px solid #44ff79;
+  background: #44ff79;
+}
+
+.post-button {
+  border: 1px solid #ffd35c;
+  background: #ffd35c;
+}
