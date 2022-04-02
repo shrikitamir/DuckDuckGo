@@ -17,6 +17,7 @@ const Sidebar = ({ searchFn }) => {
 
   return (
     <ProSidebar className="sidebar">
+      <h1 className='queries-title'>Queries</h1>
       <Menu>
         {queryArr.length
           ? queryArr.map((result, index) => {

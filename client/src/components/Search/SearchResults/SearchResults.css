@@ -8,3 +8,11 @@
     margin-top: 40px;
     margin-left: 30px;
 }
+
+.marked-word {
+    background: yellow;
+}
+
+.find-input {
+    height: 20px;
+}
