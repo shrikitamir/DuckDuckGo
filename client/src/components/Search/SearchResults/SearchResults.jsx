@@ -5,9 +5,9 @@ import './SearchResults.css'
 const SearchResults = (searchResults) => {
   return (
     <div className="search-results-list">
-      {searchResults.results ? (
-        searchResults.results.length ? (
-          searchResults.results.map((result, index) => {
+      {searchResults.currentItems ? (
+        searchResults.currentItems.length ? (
+          searchResults.currentItems.map((result, index) => {
             return <SearchResult key={index} result={result} />;
           })
         ) : (

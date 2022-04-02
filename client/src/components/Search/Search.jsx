@@ -1,6 +1,6 @@
 import SearchBar from "./SearchBar/SearchBar";
 import ClipLoader from "react-spinners/ClipLoader";
-import SearchResults from "./SearchResults/SearchResults";
+import SearchResultsPaginate from './SearchResultsPaginate/SearchResultsPaginate';
 import { useSelector, useDispatch } from "react-redux";
 import { setLoadingTrue, setLoadingFalse } from "../../actions";
 import "./Search.css";
@@ -19,7 +19,13 @@ const Search = ({ searchFn, searchResults }) => {
   return (
     <div className="search-container">
       <SearchBar search={search} />
-      {!isLoading ? <SearchResults results={searchResults} /> : <ClipLoader />}
+      {!isLoading ? (
+        searchResults ? (
+          <SearchResultsPaginate results={searchResults} itemsPerPage={6} />
+        ) : null
+      ) : (
+        <ClipLoader />
+      )}
     </div>
   );
 };
